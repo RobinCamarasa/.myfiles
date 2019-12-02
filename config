@@ -87,10 +87,10 @@ bindsym $mod+q focus parent
 #bindsym $mod+d focus child
 
 # switch to workspace
-bindsym $mod+ampersand workspace 5
-bindsym $mod+eacute workspace 6
-bindsym $mod+quotedbl workspace 7
-bindsym $mod+apostrophe workspace 8
+bindsym $mod+comma workspace 5
+bindsym $mod+semicolon workspace 6
+bindsym $mod+colon workspace 7
+bindsym $mod+exclam workspace 8
 bindsym $mod+parenleft workspace 9
 bindsym $mod+minus workspace 1O
 bindsym $mod+u workspace 1
@@ -99,10 +99,10 @@ bindsym $mod+o workspace 3
 bindsym $mod+p workspace 4
 
 # move focused container to workspace
-bindsym $mod+Shift+1 move container to workspace 5
-bindsym $mod+Shift+eacute move container to workspace 6
-bindsym $mod+Shift+3 move container to workspace 7
-bindsym $mod+Shift+4 move container to workspace 8
+bindsym $mod+Shift+comma move container to workspace 5
+bindsym $mod+Shift+semicolon move container to workspace 6
+bindsym $mod+Shift+colon move container to workspace 7
+bindsym $mod+Shift+exclam move container to workspace 8
 bindsym $mod+Shift+5 move container to workspace 9
 bindsym $mod+Shift+6 move container to workspace 10
 bindsym $mod+Shift+u move container to workspace 1
