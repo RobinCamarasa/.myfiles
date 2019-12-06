@@ -142,3 +142,27 @@ function mkalias_test_env(){ source /home/robin/Desktop/test/test/bin/activate $
 
 alias lpt_last='mkalias_lpt_last'
 function mkalias_lpt_last(){ source /home/robin/Desktop/lpt_last_csv/lpt_last_env/bin/activate $@; }
+
+export PATH=/usr/local/cuda-10.0/bin:$PATH
+export LD_LIBRARY_PATH=/usr/local/cuda-10.0/lib64:$LD_LIBRARY_PATH
+
+alias cluster='mkalias_cluster'
+function mkalias_cluster(){ ssh rcamarasa@bigr-cluster $@; }
+
+alias vibashrc='mkalias_vibashrc'
+function mkalias_vibashrc(){ vi ~/.bashrc $@; }
+
+alias preprocess_parisk='mkalias_preprocess_parisk'
+function mkalias_preprocess_parisk(){ source /mnt/D2C8C54FC8C53291/venvs/preprocess_parisk/bin/activate $@; }
+
+alias disk='mkalias_disk'
+function mkalias_disk(){ cd /mnt/D2C8C54FC8C53291 $@; }
+
+alias end_to_end_mc_dropout='mkalias_end_to_end_mc_dropout'
+function mkalias_end_to_end_mc_dropout(){ source /mnt/D2C8C54FC8C53291/venvs/end_to_end_mc_dropout_env/bin/activate $@; }
+
+alias baseline_unet='mkalias_baseline_unet'
+function mkalias_baseline_unet(){ source /mnt/D2C8C54FC8C53291/venvs/baseline_unet/bin/activate $@; }
+
+alias pipinstall='mkalias_pipinstall'
+function mkalias_pipinstall(){ pip install ./ --no-cache-dir $@; }
