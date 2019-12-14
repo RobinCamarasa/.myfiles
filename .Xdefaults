@@ -1,0 +1,51 @@
+*foreground: #cccccc
+*foreground_bold: #a8a19f
+*cursor: #a8a19f
+
+!! black
+*color0: #1b1918
+*color8: #1b1918
+!! red
+*color1: #f22c40
+*color9: #f22c40
+!! green
+*color2: #5ab738
+*color10: #5ab738
+!! yellow
+*color3: #d5911a
+*color11: #d5911a
+!! blue
+*color4: #407ee7
+*color12: #407ee7
+!! magenta
+*color5: #6666ea
+*color13: #6666ea
+!! Cyan
+*color6: #00ad9c
+*color14: #00ad9c
+!! White
+*color7: #f1efee
+*color15: #f1efee
+
+
+URxvt.intensityStyles:	false
+URxvt.background:       [70]#000000
+URxvt.depth:		32
+URxvt.font: 		xft:monospace:size=11
+URxvt.scrollBar:	false
+URxvt.cursorColor:	magenta
+
+!! Extensions
+URxvt.perl-ext-common:	default,matcher,resize-font,url-select,keyboard-select,fullscreen
+URxvt.colorUL:		#4682B4
+!! url-select
+URxvt.keysym.M-u:	perl:url-select:select_next
+URxvt.url-select.launcher: /usr/bin/xdg-open
+URxvt.url-select.underline: true
+!! keyboard-select:
+URxvt.keysym.M-Escape: perl:keyboard-select:activate
+!! resize-font
+URxvt.resize-font.smaller:	C-Down
+URxvt.resize-font.bigger:	C-Up
+!! Matcher
+URxvt.matcher.button:	1
